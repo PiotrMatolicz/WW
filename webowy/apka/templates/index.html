@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Spis treści</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styl.css'%}"/>
+</head>
+<body>
+<h1>Aplikacja Django – spis treści</h1>
+
+<ul>
+    <li><a href="/">strona główna</a></li>
+    <li><a href="/hello">Hello</a></li>
+    <li><a href="/czas">czas tekstowo</a></li>
+    <li><a href="/czas.html">czas HTML</a> - treść w funkcji</li>
+    <li><a href="/czas_szablon">czas szablon</a></li>
+    <li><a href="/rozmowa">rozmowa</a></li>
+    <li><a href="/kalkulator_get">kalkulator</a> jako przykład formularza</li>
+    <li><a href="/kalkulator_post">kalkulator POST</a></li>
+    <li><a href="/sklep/produkty.txt">lista towarów TXT</a></li>
+    <li><a href="/sklep/produkty.html">lista towarów HTML</a></li>
+    <li><a href="/admin">ADMIN</a></li>
+</ul>
+
+</body>
+</html>

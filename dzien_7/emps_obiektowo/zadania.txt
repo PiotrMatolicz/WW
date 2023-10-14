@@ -1,0 +1,14 @@
+3. Użytkownik wpisuje stanowisko (np. Programmer), a program oblicza ilu jest takich pracowników
+   i jaka jest ich średnia pensja.
+
+4. Dla każdego job_title występującego w danych oblicz średnią pensję.
+
+5. Wypisz dane pracownika, który zarabia najwięcej, i tego, który zarabia najmniej.
+   (nie tylko samą wartość liczbową, ale też kto to jest)
+
+6. Wypisz pracowników posortowanych wg pensji malejąco.
+
+7. Użytkownik podaje job oraz kwotę podwyżki, a program dodaje taką podwyżkę
+   pracownikom z podanego stanowiska i WSZYSTKICH pracowników zapisuje do NOWEGO pliku
+   w formacie CSV. (Należy dodać funkcję zapisz_plik)
+

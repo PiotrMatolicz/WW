@@ -1,0 +1,50 @@
+Django
+https://www.djangoproject.com/ - strona projektu
+Getting started with Django (oficjalny tutorial)
+https://tutorial.djangogirls.org/pl/ - podstawy Django po polsku
+Tagi szablonów Django
+Materiały na bardziej zaawansowane tematy (realpython)
+Materiały ogólnie na temat HTML
+Kurs Pawła Wimmera
+www.w3schools.com
+Polecenia wykonywane w konsoli systemowej:
+# Utworzenie jakiegoś wirtualnego środowiska i jego aktywacja - jak wcześniej
+Uwaga, ten zestaw czynności na szkoleniu wykonujemy w Pycharm, a nie w wierszu poleceń. Poniższy blok wykonywalibyśmy, gdyby to było poza Pycharm
+mkdir przyklady_django
+cd przyklady_django
+python -m venv venv
+venv\Scripts\activate.bat
+# lub wersja Linux: . venv/bin/activate
+# teraz instalacja django
+pip install django
+
+
+# od tego miejsca wykonujemy to w wierszu poleceń (Terminal) uruchomionym wewnątrz Pycharm
+
+# utworzenie projektu
+django-admin startproject webowy
+cd webowy
+# a w PyCharm dodatkowo `mark directory as sources root`
+
+# Utworzenie aplikacji - w Django projekt może składać się z wielu aplikacji
+python manage.py startapp apka
+
+# Trzeba wyedytować pliki setting.py, urls.py, dodać coś do views.py itd...
+# w settings.py dopisujemy nazwę aplikacji "apka" do listy INSTALLED_APPS
+# jeśli aplikacja posiada model, to w models.py dodać definicje klas...
+
+# przygotowanie skryptów aktualizujących bazę danych
+python manage.py makemigrations
+
+# wykonanie skryptów aktualizujących bazę danych
+python manage.py migrate
+
+# utworzenie użytkownika - na potrzeby modułu admin
+python manage.py createsuperuser
+
+# włączenie serwera
+python manage.py runserver
+
+Aby serwer słuchał na wszystkich interfejsach, to
+# w pliku settings jako ALLOWED_HOSTS należy wpisać ['*'], lub coś mądrzejszego jeśli rozumiemy (maski sieciowe itp.)
+python manage.py runserver 0.0.0.0:8000

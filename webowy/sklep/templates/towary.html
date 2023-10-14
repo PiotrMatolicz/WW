@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Produkty naszego sklepu</title>
+</head>
+<body>
+<h1>Lista towarów</h1>
+
+<ul>
+    {% for t in towary %}
+        <li>towar: {{ t.nazwa }} - cena {{ t.cena }} zł
+          (termin ważności {{t.termin_waznosci}})
+          {% if t.promocja %}}
+            <strong>PROMOCJA!</strong>
+          {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

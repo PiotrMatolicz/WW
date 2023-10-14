@@ -1,0 +1,26 @@
+body {
+    background-color: #FFFFDD;
+}
+
+form {
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 10px;
+    background-color: #BBEEFF;
+}
+
+.wynik {
+    border: 2px solid #00AA00;
+    margin: 20px;
+    padding: 10px;
+    background-color: #CCFFDD;
+}
+
+.error {
+    border: 2px solid red;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    color: red;
+}
+

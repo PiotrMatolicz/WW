@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rozmowa</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styl.css' %}">
+</head>
+<body>
+<h1>Rozmowa z Pythonem</h1>
+<form>
+    <label for="imie">Jak masz na imię?</label><br>
+    <input type="text" name="imie" id="imie"><br>
+
+    <button>Wyślij</button>
+</form>
+
+<div class="wynik">
+    {{powitanie}}
+</div>
+
+</body>
+</html>
