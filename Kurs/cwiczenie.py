@@ -12,5 +12,6 @@ else:
        print("Nie znaleziono liczby większej od 10 w liście.")
 
 
-wynik = 2 + 3 * 5 - 8 / 4 ** 2 % 3
-print(wynik)
+
+
+
